@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'aq1%6amb8_)thj+2!%6au^ilu#u(7o&t3p8ke(jvdj6t(n6qd1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['emetowinner.herokuapp.com']
 
 
 # Application definition
