@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
 import home.views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -25,3 +26,11 @@ urlpatterns = [
 ] 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+from portfolioapp import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.home, name='home')
+]
+>>>>>>> b92e5818e7c29f0332cf46867148a477618cd4aa
