@@ -25,6 +25,11 @@ SECRET_KEY = 'iwk#dxumus+#+3#xcixubz!kp&(wzoae7a^by&vgylx3_=*r(g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+## uncomment for production
+#ALLOWED_HOSTS = ['winneremeto.pythonanywhere.com']
+
+
+## comment for production
 ALLOWED_HOSTS = []
 
 
@@ -117,6 +122,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = '/home/winneremeto/portfolio/static'
 STATIC_URL = '/static/'
+MEDIA_ROOT = '/home/winneremeto/portfolio'
+MEDIA_URL = '/media/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
